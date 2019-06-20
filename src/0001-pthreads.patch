@@ -1,0 +1,13 @@
+diff --git a/modules/core/src/parallel.cpp b/modules/core/src/parallel.cpp
+index accfabb6d..6bc99f1d0 100644
+--- a/modules/core/src/parallel.cpp
++++ b/modules/core/src/parallel.cpp
+@@ -115,6 +115,8 @@
+     #include <ppltasks.h>
+ #elif defined HAVE_CONCURRENCY
+     #include <ppl.h>
++#elif defined HAVE_PTHREADS_PF
++    #include <pthread.h>
+ #endif
+ 
+ 

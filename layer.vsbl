@@ -1,0 +1,35 @@
+/* layer.vsbl file for OpenCV layer */
+/*
+ * Copyright (c) 2017-2019 Wind River Systems, Inc.
+ *
+ * The right to copy, distribute, modify, or otherwise make use
+ * of this software may be licensed only pursuant to the terms
+ * of an applicable Wind River license agreement.
+ */
+
+/*
+Modification history
+--------------------
+10jun19,rcw  uprev to 4.1.0
+24oct18,d_l  uprev to 3.3.1.11
+21mar18,d_l  remove gnu and i86 limitation
+23feb18,d_l  add LAYER_REQUIRES IMAGE_JPEG
+05feb18,d_l  update SYNOPSIS and layer dependency
+10jan18,d_l  add tbb support
+13nov17,d_l  create
+*/
+
+/* XXX Removed XXX     LAYER_REQUIRES  UTILS_TBB RASTER_LIBJPEG */
+Layer OPENCV
+    {
+    SYNOPSIS        OpenCV and machine learning libraries
+    HELP            This layer provides open source computer vision (OpenCV) and machine learning software library.
+    VERSION         4.1.0
+    FEATURE         OPEN_SOURCE
+    VENDOR          Wind River
+    LAYER_REQUIRES  RASTER_LIBJPEG RASTER_PNG
+    VSB_REQUIRES
+    OPTIONAL        YES
+    DEFAULT         NO
+    DOC_BUILD       NO
+    }

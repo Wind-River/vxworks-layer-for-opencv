@@ -1,0 +1,13 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 9a56a1528..8afe66619 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -725,6 +725,8 @@ if(UNIX)
+       set(OPENCV_LINKER_LIBS ${OPENCV_LINKER_LIBS} dl m log)
+     elseif(CMAKE_SYSTEM_NAME MATCHES "FreeBSD|NetBSD|DragonFly|OpenBSD|Haiku")
+       set(OPENCV_LINKER_LIBS ${OPENCV_LINKER_LIBS} m pthread)
++    elseif(CMAKE_SYSTEM_NAME MATCHES "VxWorks")
++      set(OPENCV_LINKER_LIBS ${OPENCV_LINKER_LIBS} dl m)
+     elseif(EMSCRIPTEN)
+       # no need to link to system libs with emscripten
+     else()
