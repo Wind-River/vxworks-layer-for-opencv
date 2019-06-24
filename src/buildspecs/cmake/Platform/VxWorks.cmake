@@ -44,8 +44,6 @@ set(CMAKE_SKIP_BUILD_RPATH TRUE)
 
 set(CMAKE_SYSROOT $ENV{VSB_DIR})
 
-set(CMAKE_FIND_ROOT_PATH $ENV{PRJ_WS}/install)
-
 set(CMAKE_INCLUDE_PATH
         /usr/root/include
         /usr/h/published/UTILS
