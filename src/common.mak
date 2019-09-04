@@ -29,12 +29,11 @@
 PKG_NAME = opencv
 PKG_VER = 4.1.0
 
-PKG_URL = http://stash.wrs.com/scm/~mdragusu/opencv-vx.git
+PKG_URL = https://github.com/Wind-River/opencv
 PKG_TYPE = git
-PKG_COMMIT_ID = vxsdk
 
 PKG_LICENSE = BSD
 
-PKG_DIR_NAME = opencv-vx
+PKG_DIR_NAME = opencv
 PKG_BUILD_DIR = build
 PKG_SRC_DIR = src
