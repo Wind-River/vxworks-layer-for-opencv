@@ -48,8 +48,7 @@ https://github.com/Wind-River/vxworks-layer-for-opencv
 
 All product names, logos, and brands are property of their respective owners. All company, 
 product and service names used in this software are for identification purposes only. 
-Wind River and VxWorks are registered trademarks of Wind River Systems, Inc. UNIX is a 
-registered trademark of The Open Group.
+Wind River and VxWorks are registered trademarks of Wind River Systems, Inc.
 
 Disclaimer of Warranty / No Support: Wind River does not provide support 
 and maintenance services for this software, under Wind River’s standard 
